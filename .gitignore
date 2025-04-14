@@ -1,2 +1,1 @@
-echo "node_modules/" >> .gitignorenode_module/
 node_modules/
