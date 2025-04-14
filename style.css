@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+#todoInput {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+#todoInput:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+#addBtn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#addBtn:hover {
+  background: #764ba2;
+}
+
+#todoList {
+  list-style: none;
+}
+
+.todo-item {
+  background: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 0.3s ease;
+  transition: transform 0.2s ease;
+}
+
+.todo-item:hover {
+  transform: translateX(5px);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.complete-btn {
+  background: #48bb78;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-btn {
+  background: #f56565;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.complete-btn:hover,
+.delete-btn:hover {
+  opacity: 0.9;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.stats {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 0.9em;
+}

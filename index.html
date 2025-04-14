@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List <i class="fas fa-tasks"></i></h1>
+        
+        <div class="input-section">
+            <input type="text" id="todoInput" placeholder="Add a new task...">
+            <button id="addBtn"><i class="fas fa-plus"></i></button>
+        </div>
+
+        <ul id="todoList"></ul>
+
+        <div class="stats">
+            <span>Total Tasks: <span id="totalTasks">0</span></span>
+            <span>Completed: <span id="completedTasks">0</span></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
